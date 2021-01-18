@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				box-sizing: border-box;
+				margin: 1rem;
+				font-size: 1rem;
+				font-family: -apple-system, BlinkMacSystemFont, Bazier Square,
+					Noto Sans KR, Segoe UI, Apple SD Gothic Neo, Roboto, Helvetica Neue,
+					Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+					Noto Color Emoji;
+			}
+
+			.container {
+				margin: 1em 0;
+				border: 3px dotted #4a4a4a;
+				padding: 0.5em;
+			}
+
+			.row {
+				display: flex;
+				flex-direction: row;
+			}
+			.column {
+				display: flex;
+				flex-direction: column;
+			}
+			.box {
+				border: 3px solid white;
+				padding: 1em;
+				font-size: 2em;
+				background-color: #3f29ef;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- flex container가 아이템을 쌓는 방향이 가로일 때 row -->
+		<h1>
+			하나의 행(row)을 만들고, 👉 방향으로 아이템을 쌓는다. <br />
+			교차축 👇 방향으로 내부의 가장 큰 아이템에 맞춰 늘어난다.
+		</h1>
+		<div class="container row">
+			<div class="box">A</div>
+			<div class="box">B</div>
+			<div class="box">
+				높이가<br />
+				커진 <br />
+				C
+			</div>
+		</div>
+		<br />
+		<br />
+		<h1>
+			하나의 열(column)을 만들고, 👇방향으로 아이템을 쌓는다. <br />
+			교차축 👉 방향으로 내부의 가장 큰 아이템에 맞춰 늘어난다.
+		</h1>
+		<div class="container column">
+			<div class="box">A</div>
+			<div class="box">B</div>
+			<div class="box">더 많은 내용을 담고 있는 C</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				box-sizing: border-box;
+				margin: 1rem;
+				font-size: 1rem;
+				font-family: -apple-system, BlinkMacSystemFont, Bazier Square,
+					Noto Sans KR, Segoe UI, Apple SD Gothic Neo, Roboto, Helvetica Neue,
+					Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+					Noto Color Emoji;
+			}
+
+			.container {
+				margin: 1em 0;
+				background-color: #c2edc8;
+				display: flex;
+				flex-direction: row;
+			}
+
+			.box {
+				padding: 1em;
+				font-size: 2em;
+				background-color: #3f29ef;
+				color: white;
+			}
+			.container > :nth-child(2) {
+				margin-left: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="box">Toy-Crane Blog</div>
+			<div class="box">Home</div>
+			<div class="box">About</div>
+			<div class="box">Login</div>
+		</div>
+	</body>
+</html>

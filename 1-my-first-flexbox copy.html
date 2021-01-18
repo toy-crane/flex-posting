@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				margin: 1em;
+				font-size: 1rem;
+				font-family: -apple-system, BlinkMacSystemFont, Bazier Square,
+					Noto Sans KR, Segoe UI, Apple SD Gothic Neo, Roboto, Helvetica Neue,
+					Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+					Noto Color Emoji;
+			}
+			.container {
+				display: flex;
+				margin: 1em 0;
+				border: 3px dotted #4a4a4a;
+				padding: 0.5em;
+			}
+			.box {
+				background-color: #3f29ef;
+				color: white;
+				padding: 1em;
+				font-size: 2em;
+				border: 3px solid white;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- flex container가 없을 때 -->
+		<div>
+			<div class="box">BOX1</div>
+			<div class="box">BOX2</div>
+			<div class="box">BOX3</div>
+		</div>
+		<!-- flex container가 있을 때 -->
+		<div class="container">
+			<div class="box">ITEM1</div>
+			<div class="box">ITEM2</div>
+			<div class="box">ITEM3</div>
+		</div>
+	</body>
+</html>
